@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Diya Khampa — Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="file.css" />
+
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo">Diya K.</div>
+  <div class="nav-tabs">
+    <button class="nav-tab active" onclick="switchPage('personal',this)">✦ Personal</button>
+    <button class="nav-tab" onclick="switchPage('professional',this)">Professional</button>
+  </div>
+  <div class="nav-links">
+    <a href="https://in.pinterest.com/khampadiya8/ " target="_blank" title="Pinterest"><i class="fab fa-pinterest"></i></a>
+    <a href="https://www.instagram.com/diyaakhampaaa/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="https://github.com/diyaakhampaaa" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/diya-khampa-4b9851302/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+  </div>
+</nav>
+
+<!-- ═══════════ PERSONAL ═══════════ -->
+<div id="page-personal" class="page active">
+
+  <div class="hero">
+    <div class="hero-left">
+      <div class="hero-tag">Personal Portfolio</div>
+      <h1 class="hero-name">Hello, I'm<br><em>Diya Khampa</em></h1>
+      <p class="hero-sub">
+        A girl from the misty hills of Nainital, Uttarakhand — driven by curiosity, a love for the open road, and a deep belief that the best things in life are found in new people, good music, and a sky that takes your breath away.
+      </p>
+      <div class="hero-chips">
+        <span class="chip">✈️ Traveller</span>
+        <span class="chip">🐕 Dog Lover</span>
+        <span class="chip">🎵 Music Enthusiast</span>
+        <span class="chip">🌅 Sky Chaser</span>
+        <span class="chip">📚 Lifelong Learner</span>
+        <span class="chip">🌿 Nainital, Uttarakhand</span>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="hero-photo-placeholder" id="heroPP" onclick="document.getElementById('heroInput').click()">
+        <img src="assets/DIYA.jpeg" class="ph-img" alt="Diya Photo">
+      </div>
+      <div class="hero-age-badge">19 <span>years young</span></div>
+    </div>
+  </div>
+
+  <!-- HOBBIES -->
+  <section class="hobbies-section">
+    <div class="section-label">What I Love Doing</div>
+    <h2 class="section-title">My <em>Hobbies</em></h2>
+    <div class="hobbies-grid">
+
+      <div class="hobby-card">
+        <div class="hobby-icon">🇩🇪</div>
+        <div class="hobby-title">Learning Languages</div>
+        <div class="hobby-desc">Languages are keys to entire worlds. Currently diving into German — the grammar is quite the challenge, but every sentence I crack feels like a tiny victory.</div>
+        <span class="hobby-badge">Currently: Deutsch 🔥</span>
+      </div>
+
+      <div class="hobby-card">
+        <div class="hobby-icon">🍳</div>
+        <div class="hobby-title">Cooking</div>
+        <div class="hobby-desc">Still finding my way around the kitchen — some experiments have been glorious disasters, some surprisingly good. The journey is the fun part. Send recipes!</div>
+        <span class="hobby-badge">Learning Mode: ON 😂</span>
+      </div>
+
+      <div class="hobby-card">
+        <div class="hobby-icon">📖</div>
+        <div class="hobby-title">Reading</div>
+        <div class="hobby-desc">Anything that makes me pause, think, or see the world differently. A good book feels like travelling without ever leaving your chair.</div>
+      </div>
+
+      <div class="hobby-card">
+        <div class="hobby-icon">📓</div>
+        <div class="hobby-title">Journaling</div>
+        <div class="hobby-desc">My journal is where thoughts go to breathe. Writing things down makes sense of the chaos — and it's the most honest conversation I have all day.</div>
+      </div>
+
+      <div class="hobby-card" style="grid-column:span 1;">
+        <div class="hobby-icon">📷</div>
+        <div class="hobby-title">Photography</div>
+        <div class="hobby-desc">Capturing light, moments, landscapes — especially mountain skies from back home. Every photo is a small act of not wanting to forget.</div>
+        <div class="photo-upload-row" id="photoRow">
+          <div class="photo-slot-mini" onclick="this.querySelector('input').click()">
+            <img src="assets/NAINITAL.jpeg">
+          </div>
+          <div class="photo-slot-mini" onclick="this.querySelector('input').click()">
+            <img src="assets/HUMAYUN.jpeg">
+          </div>
+          <div class="photo-slot-mini" onclick="this.querySelector('input').click()">
+            <img src="assets/TREE.jpeg">
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ASPIRATIONS -->
+  <section class="aspirations-section">
+    <div class="section-label">On My Horizon</div>
+    <h2 class="section-title">Things I Want to <em>Explore</em></h2>
+    <div class="aspirations-grid">
+      <div class="aspiration-card">
+        <div class="aspiration-number">01</div>
+        <div class="aspiration-icon">🎸</div>
+        <div class="aspiration-title">Master the Guitar</div>
+        <div class="aspiration-desc">Music has always been a part of who I am — but I want to make it, not just listen to it. Learning guitar feels like learning a new language for emotion. One chord at a time.</div>
+      </div>
+      <div class="aspiration-card">
+        <div class="aspiration-number">02</div>
+        <div class="aspiration-icon">🌍</div>
+        <div class="aspiration-title">Explore the World</div>
+        <div class="aspiration-desc">Every country is a different way of being human. I want to collect experiences, not things — more skies, more streets, more stories from corners I haven't found yet.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUOTES -->
+  <section class="quotes-section">
+    <div class="section-label">Words That Stay With Me</div>
+    <h2 class="section-title">Favourite <em>Quotes</em></h2>
+    <div class="quotes-grid">
+      <div class="quote-card">
+        <div class="quote-mark">"</div>
+        <div class="quote-text">Not all those who wander are lost.</div>
+        <div class="quote-author">— J.R.R. Tolkien</div>
+      </div>
+      <div class="quote-card">
+        <div class="quote-mark">"</div>
+        <div class="quote-text">The world is a book, and those who do not travel read only one page.</div>
+        <div class="quote-author">— Saint Augustine</div>
+      </div>
+      <div class="quote-card">
+        <div class="quote-mark">"</div>
+        <div class="quote-text">She believed she could, so she did.</div>
+        <div class="quote-author">— R.S. Grey</div>
+      </div>
+      <div class="quote-card">
+        <div class="quote-mark">"</div>
+        <div class="quote-text">Do something today that your future self will thank you for.</div>
+        <div class="quote-author">— Sean Patrick Flanery</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="social-bar">
+    <span class="social-bar-label">Find me on</span>
+    <a href="https://in.pinterest.com/khampadiya8/" target="_blank" class="social-link pinterest"><i class="fab fa-pinterest"></i> Pinterest</a>
+    <a href="https://www.instagram.com/diyaakhampaaa/" target="_blank" class="social-link instagram"><i class="fab fa-instagram"></i> Instagram</a>
+  </div>
+
+</div><!-- /personal -->
+
+
+<!-- ═══════════ PROFESSIONAL ═══════════ -->
+<div id="page-professional" class="page">
+
+  <div class="pro-hero">
+    <div>
+      <div class="pro-hero-label">Professional Portfolio</div>
+      <h1 class="pro-hero-name">Diya<br><em style="color:var(--gold);font-style:italic">Khampa</em></h1>
+      <p class="pro-hero-desc">Tech enthusiast and aspiring IT professional — building a foundation in software, data, and systems while chasing a curiosity that never quite sits still.</p>
+      <div class="pro-tags">
+        <span class="pro-tag">B.Tech IT</span>
+        <span class="pro-tag">IGDTUW, Delhi</span>
+        <span class="pro-tag">2025 – 2029</span>
+        <span class="pro-tag">Developer in Progress</span>
+      </div>
+    </div>
+    <div class="pro-hero-right">
+      <div class="education-card-hero">
+        <div class="edu-badge">Currently Pursuing</div>
+        <div class="edu-uni">Indira Gandhi Delhi Technical University for Women</div>
+        <div class="edu-degree">Bachelor of Technology — Information Technology<br>Kashmere Gate, New Delhi</div>
+        <div class="edu-years">2025 — 2029</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCHOOLING -->
+  <section class="schooling-section">
+    <div class="section-label">Academic Background</div>
+    <h2 class="section-title">Education & <em>Schooling</em></h2>
+
+    <div class="school-timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-years">Early Foundations · Up to Class 5th</div>
+          <div class="timeline-school">Shree Ram Academy</div>
+          <div class="timeline-detail">Where it all began — the early years that built curiosity, discipline, and a love for learning, nestled in the beautiful landscape of Uttarakhand.</div>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot t2"></div>
+        <div class="timeline-card">
+          <div class="timeline-years">Class 6th – 12th</div>
+          <div class="timeline-school">Kendriya Vidyalaya, I.V.R.I Mukteshwar</div>
+          <div class="timeline-detail">Six formative years at KV IVRI, Mukteshwar, Uttarakhand — a stunning campus in the mountains that shaped both academics and independence. Memories for a lifetime.</div>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot t3"></div>
+        <div class="timeline-card">
+          <div class="timeline-years">2025 – 2029 · Ongoing</div>
+          <div class="timeline-school">Indira Gandhi Delhi Technical University for Women (IGDTUW)</div>
+          <div class="timeline-detail">Pursuing B.Tech in Information Technology at one of Delhi's leading technical universities for women. Building skills, connections, and a future in tech. Kashmere Gate, New Delhi.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-label" style="margin-top:0.5rem;">Academic Memories</div>
+    <div class="school-photos-row">
+      <div class="school-photo-slot" onclick="this.querySelector('input').click()">
+        <img src="assets/SRA.jpeg">
+      </div>
+      <div class="school-photo-slot" onclick="this.querySelector('input').click()">
+        <img src="assets/KVS.jpeg">
+      </div>
+      <div class="school-photo-slot" onclick="this.querySelector('input').click()">
+        <img src="assets/SHEHZAADI.png">
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills-section">
+    <div class="section-label">Technical Proficiency</div>
+    <h2 class="section-title">Coding <em>Skills</em></h2>
+    <div class="skills-grid">
+      <div>
+        <div class="skill-group-title">Programming Languages</div>
+        <div class="skill-bars">
+          <div>
+            <div class="skill-bar-header"><span class="skill-bar-label">Python</span><span class="skill-bar-level">Comfortable</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" style="width:82%"></div></div>
+          </div>
+          <div>
+            <div class="skill-bar-header"><span class="skill-bar-label">C++</span><span class="skill-bar-level">Familiar</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" style="width:58%;animation-delay:0.15s"></div></div>
+          </div>
+          <div>
+            <div class="skill-bar-header"><span class="skill-bar-label">SQL</span><span class="skill-bar-level">Familiar</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" style="width:78%;animation-delay:0.3s"></div></div>
+          </div>
+          <div>
+            <div class="skill-bar-header"><span class="skill-bar-label">R</span><span class="skill-bar-level">Comfortable</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" style="width:82%;animation-delay:0.45s"></div></div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="skill-group-title">Web & Technologies</div>
+        <div class="skill-tags">
+          <span class="skill-tag"><i class="fab fa-html5"></i> HTML</span>
+          <span class="skill-tag"><i class="fab fa-css3-alt"></i> CSS</span>
+          <span class="skill-tag"><i class="fab fa-js"></i> JavaScript</span>
+          <span class="skill-tag"><i class="fas fa-layer-group"></i> Frontend Dev</span>
+          <span class="skill-tag"><i class="fas fa-database"></i> SQL Databases</span>
+          <span class="skill-tag"><i class="fas fa-chart-bar"></i> Data Analysis</span>
+          <span class="skill-tag"><i class="fas fa-code"></i> OOP (C++)</span>
+          <span class="skill-tag"><i class="fas fa-terminal"></i> Python Scripting</span>
+        </div>
+        <div style="margin-top:2rem">
+          <div class="skill-group-title">Soft Skills</div>
+          <div class="skill-tags">
+            <span class="skill-tag">🧠 Problem Solving</span>
+            <span class="skill-tag">📊 Analytical Thinking</span>
+            <span class="skill-tag">🤝 Collaboration</span>
+            <span class="skill-tag">🎨 UI Sensibility</span>
+            <span class="skill-tag">🌐 Multilingual</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="pro-links">
+    <span class="social-bar-label">Connect Professionally</span>
+    <a href="https://github.com/diyaakhampaaa " target="_blank" class="pro-link github"><i class="fab fa-github"></i> GitHub</a>
+    <a href="https://www.linkedin.com/in/diya-khampa-4b9851302/" target="_blank" class="pro-link linkedin"><i class="fab fa-linkedin"></i> LinkedIn</a>
+  </div>
+
+</div><!-- /professional -->
+
+<footer>Made with ♥ &nbsp;·&nbsp; <span>Diya Khampa</span> &nbsp;·&nbsp; 2025</footer>
+
+<script src="file.js">
+    
+</script>
+</body>
+</html>
